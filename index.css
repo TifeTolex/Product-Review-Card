@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* variables */
+:root {
+    /* primary colors */
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Darker-cyan: hsl(163, 35%, 8%);
+    --Cream: hsl(30, 38%, 92%);
+    /* Other colors */
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+    /* Fonts */
+    --Main-font:'Montserrat', serif;
+    --Sub-font: 'Fraunces', serif;
+
+    /* font size */
+    --Header-fontsize: clamp(2rem, 2vw + 1rem, 3rem);
+    --body-fontsize: clamp(0.7rem , 1vw + 0.6rem , 1.5rem);
+
+    /* padding */
+    --Text-padding:0.5rem 0 0.7rem 0;
+}
+
+body{
+    background-color: var(--Cream);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem;
+}
+.card{
+    background-color:var(--White) ;
+    border-radius: .5rem;
+    width: 350px;
+    min-height: 90vh;
+}
+img{
+    border-radius: 10px  10px 0 0;
+}
+.dextop-image{
+    display: none;
+}
+.card-contents{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    font-family: var(--Main-font);
+}
+.spaced-text{
+    letter-spacing: 5px;
+    font-size: var(--body-fontsize);
+
+}
+h1{
+    font-family: var(--Sub-font);
+    line-height: 1;
+    padding:var(--Text-padding);
+    font-size: var(--Header-fontsize);
+}
+button p{
+    font-size: var(--body-fontsize);
+    font-family: var(--Main-font);
+    color: var(--White);
+}
+.texts{
+    font-size: var(--body-fontsize);
+    padding-bottom: 0.2rem;
+}
+.price-tags{
+    display: flex;
+}
+h2{
+    color: var(--Dark-cyan);
+    font-family: var(--Sub-font);
+    padding: 1rem 1.5rem 1rem 0 ;
+}
+.slashed-tag-price{
+    padding: 1.3rem 1rem 1rem 0 ;
+    font-size: var(--body-fontsize);
+    text-decoration: line-through;
+}
+button{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background-color: var(--Dark-cyan);
+    border-radius: 5px;  
+    border: none;
+    gap: 10px;
+}
+button:hover, button:active{
+    background-color: var(--Darker-cyan);
+    cursor: pointer;
+}
+
+
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%)} */
+
+@media screen and (min-width:375px) {
+    body{
+      
+    }
+}
+@media screen and (min-width:591px) {
+  .card{
+    min-height: 100vh;
+    width: 360px;
+  }
+  .header-image{
+    width: 360px;
+  }
+}
+@media screen and (min-width:768px) {
+  .card{
+    min-height: 100vh;
+    width: 400px;
+  }
+  .header-image{
+    width: 400px;
+  }
+  h1{
+    font-size: 2.2rem;
+  }
+}
+@media screen and (min-width:836px) {
+  .card{
+    min-height: 100vh;
+    width: 450px;
+  }
+  .header-image{
+    width: 450px;
+  }
+  h1{
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width:1075px) {
+  .card{
+    min-height: 100vh;
+    width: 500px;
+  }
+  .header-image{
+    width: 500px;
+  }
+  h1{
+    font-size: 2.5rem;
+  }
+  .slashed-tag-price{
+    font-size: 1rem;
+  }
+  .rice{
+    width: 20px;
+  }
+}
+
+
+
+
+@media screen and (min-width:1440px) {
+
+    .card{
+        display: flex;
+        flex-direction: row;
+        width: 900px;
+    }
+    .header-image{
+        display: none;
+
+    }
+    .dextop-image{
+        display: block;
+        width: 50%;
+        height: auto;
+    }
+    .card-contents{
+        padding: 2rem;
+    }
+    .spaced-text{
+        font-size: .8rem;
+    }
+    h1{
+        font-size: 3rem;
+        padding-top: 1rem;
+    }
+    span{
+        display: block;
+        text-wrap: wrap;
+    }
+    .texts, .price-tags{
+        font-size: 1.5rem;
+    }
+    .price-tags{
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+    .content-texts{
+        padding-top: 2rem;
+    }
+    button{
+      padding: 2rem;
+    }
+    .slashed-tag-price{
+      font-size: 1.2rem;
+    }
+    .rice{
+      width: 25px;
+    }
+}
