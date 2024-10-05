@@ -111,6 +111,7 @@ button:hover, button:active{
   .card{
     height:fit-content;
     width: 360px;
+    background-color: aqua;
   }
   .header-image{
     width: 360px;
