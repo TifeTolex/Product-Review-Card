@@ -45,7 +45,7 @@ body{
     min-height: 90vh;
 }
 img{
-    border-radius: 10px  10px 0 0;
+    border-radius: 8px  8px 0 0;
 }
 .dextop-image{
     display: none;
@@ -108,22 +108,27 @@ button:hover, button:active{
 .attribution a { color: hsl(228, 45%, 44%)} */
 
 @media screen and (min-width:375px) {
-    body{
-      
-    }
-}
-@media screen and (min-width:591px) {
   .card{
-    min-height: 100vh;
+    height:fit-content;
     width: 360px;
   }
   .header-image{
     width: 360px;
   }
 }
+@media screen and (min-width:591px) {
+  .card{
+    height:fit-content;
+    width: 360px;
+  }
+  .header-image{
+    width: 360px;
+  }
+  
+}
 @media screen and (min-width:768px) {
   .card{
-    min-height: 100vh;
+    height:fit-content;
     width: 400px;
   }
   .header-image{
@@ -135,7 +140,7 @@ button:hover, button:active{
 }
 @media screen and (min-width:836px) {
   .card{
-    min-height: 100vh;
+    height:fit-content;
     width: 450px;
   }
   .header-image{
@@ -172,6 +177,7 @@ button:hover, button:active{
     .card{
         display: flex;
         flex-direction: row;
+        height:fit-content;
         width: 900px;
     }
     .header-image{
@@ -182,6 +188,7 @@ button:hover, button:active{
         display: block;
         width: 50%;
         height: auto;
+        border-radius: 0  8px 8px 0
     }
     .card-contents{
         padding: 2rem;
