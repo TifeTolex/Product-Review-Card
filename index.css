@@ -112,10 +112,12 @@ button:hover, button:active{
     height:fit-content;
     width: 360px;
     background-color: aqua;
+    overflow: hidden;
   }
   .header-image{
     width: 360px;
   }
+  
 }
 @media screen and (min-width:591px) {
   .card{
